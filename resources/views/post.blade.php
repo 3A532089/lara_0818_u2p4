@@ -3,6 +3,7 @@
 
 <head>
 
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,7 +45,8 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             </div>
-
+        @extends('postsLayouts.master')
+        @section('title', 'Clean Blog - Sample Post')
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -66,10 +68,10 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    @section('content')
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+    <header class="intro-header" style="background-image: url('{{asset('img/post-bg.jpg')}}')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -182,3 +184,4 @@
 </body>
 
 </html>
+@endsection

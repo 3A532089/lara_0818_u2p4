@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+@extends('postsLayouts.master')
 <head>
-
+    @section('title', 'Clean Blog - About')
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,10 +66,10 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    @section('content')
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/about-bg.jpg')">
+    <header class="intro-header" style="background-image: url('{{asset('img/about-bg.jpg')}}')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -149,3 +149,4 @@
 </body>
 
 </html>
+@endsection
