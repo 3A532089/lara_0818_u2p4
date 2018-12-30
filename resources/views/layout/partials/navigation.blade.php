@@ -13,16 +13,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/index">Home</a>
+                <a href="{{route('posts.index')}}">Home</a>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                <a href="{{route('posts.about')}}">About</a>
                 </li>
                 <li>
-                    <a href="/post">Sample Post</a>
+                <a href="{{route('posts.post')}}">Sample Post</a>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                <a href="{{route('posts.contact')}}">Contact</a>
                 </li>
             </ul>
         </div>
